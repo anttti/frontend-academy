@@ -2,7 +2,7 @@ import styled, { css } from "styled-components/macro";
 import React from "react";
 import classNames from "classnames";
 
-export interface ButtonProps {
+interface StyleProps {
   /**
    * Is this the principal call to action on the page?
    */
@@ -15,10 +15,13 @@ export interface ButtonProps {
    * How large should the button be?
    */
   size?: "small" | "medium" | "large";
+}
+
+export interface ButtonProps extends StyleProps {
   /**
    * Button contents
    */
-  label?: string;
+  label: string;
   /**
    * Optional click handler
    */
@@ -34,7 +37,7 @@ const secondaryStyles = css`
   box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
 `;
 
-const Btn = styled.button<ButtonProps>`
+const Btn = styled.button<StyleProps>`
   font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
   border: 0;
