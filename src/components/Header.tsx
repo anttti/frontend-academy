@@ -1,7 +1,6 @@
 import React from "react";
-
-import { Button } from "../components/Button";
-import "./header.css";
+import styled from "styled-components/macro";
+import { Button } from "./Button";
 
 export interface HeaderProps {
   user?: {};
@@ -10,6 +9,33 @@ export interface HeaderProps {
   onCreateAccount: () => void;
 }
 
+const Wrapper = styled.div`
+  font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  button + button {
+    margin-left: 10px;
+  }
+`;
+
+const SVG = styled.svg`
+  display: inline-block;
+  vertical-align: top;
+`;
+
+const Heading = styled.h1`
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 1;
+  margin: 6px 0 6px 10px;
+  display: inline-block;
+  vertical-align: top;
+`;
+
 export const Header: React.FC<HeaderProps> = ({
   user,
   onLogin,
@@ -17,9 +43,9 @@ export const Header: React.FC<HeaderProps> = ({
   onCreateAccount,
 }) => (
   <header>
-    <div className="wrapper">
+    <Wrapper>
       <div>
-        <svg
+        <SVG
           width="32"
           height="32"
           viewBox="0 0 32 32"
@@ -39,8 +65,8 @@ export const Header: React.FC<HeaderProps> = ({
               fill="#91BAF8"
             />
           </g>
-        </svg>
-        <h1>Acme</h1>
+        </SVG>
+        <Heading>Acme</Heading>
       </div>
       <div>
         {user ? (
@@ -57,6 +83,6 @@ export const Header: React.FC<HeaderProps> = ({
           </>
         )}
       </div>
-    </div>
+    </Wrapper>
   </header>
 );
