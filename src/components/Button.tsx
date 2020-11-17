@@ -38,7 +38,7 @@ const secondaryStyles = css`
 `;
 
 const Btn = styled.button<StyleProps>`
-  font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: ${(props) => props.theme.fontFamily};
   font-weight: 700;
   border: 0;
   border-radius: 3em;
