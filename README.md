@@ -25,3 +25,7 @@ When running locally, to start the storybook:
 - [Storybook](https://storybook.js.org)
 - [Styled Components](https://styled-components.com)
 - [TypeScript](https://www.typescriptlang.org)
+
+## Useful information
+
+- [Some JavaScript features](docs/javascript.md)
