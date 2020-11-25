@@ -16,7 +16,7 @@ Now you can edit files under `./static` and you should see the changes reflected
 
 When running locally, to start the storybook:
 
-- `npm install` (this needs to be run only once!)
+- `npm install` (this needs to be run only once, so you probably did this already!)
 - `npm start`
 - Open `http://localhost:6006`
 
