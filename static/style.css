@@ -1,0 +1,19 @@
+html {
+  padding: 2rem;
+  font-family: sans-serif;
+}
+
+main {
+  max-width: 30rem;
+  margin: 0 auto;
+}
+
+code {
+  padding: 2px;
+  border-radius: 4px;
+  background: rgba(0, 0, 255, 0.1);
+}
+
+p {
+  line-height: 1.5;
+}

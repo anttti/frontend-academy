@@ -2,9 +2,21 @@
 
 Frontend Academy: Designers meet code! 🎉
 
+## Static HTML & CSS
+
+When running locally, to start the static HTML & CSS server:
+
+- `npm install` (this needs to be run only once!)
+- `npm run html`
+- Open `http://localhost:3000`
+
+Now you can edit files under `./static` and you should see the changes reflected in the browser immediately.
+
+## Storybook
+
 When running locally, to start the storybook:
 
-- `npm install`
+- `npm install` (this needs to be run only once!)
 - `npm start`
 - Open `http://localhost:6006`
 

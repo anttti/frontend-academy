@@ -1,5 +1,13 @@
 # Frontend Academy exercises
 
+## Static HTML & CSS
+
+1. Do a custom styled button. Remember you can do `:hover`, `:focus`, `:active` and `:disabled` selectors to react to different states! 
+   1. [MDN's button article](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button) is probably worth your while
+   2. Extra credit: Read the accessibility section at the end of the page
+
+## React
+
 1. Style the `Button` component to your liking
    1. Take into account disabled & focus styles!
    2. Create stories for the different styles
