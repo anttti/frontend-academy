@@ -41,3 +41,4 @@ When running locally, to start the storybook:
 ## Useful information
 
 - [Some JavaScript features](docs/javascript.md)
+- [Storybook addons](docs/storybook-addons.md)
